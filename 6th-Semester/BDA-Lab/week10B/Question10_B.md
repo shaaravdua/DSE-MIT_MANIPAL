@@ -49,3 +49,12 @@ customer_item_counts = FOREACH customer_items GENERATE customers_data::CustomerN
 STORE customer_item_counts INTO 'output' USING PigStorage(',');
 
 ```
+
+*sample_output*
+
+```
+CustomerName,NumItems
+John Doe,2
+Jane Smith,1
+Bob Johnson,1
+```
